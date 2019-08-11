@@ -65,14 +65,17 @@
     view.frame = CGRectMake(kScreenWidth * index, 0, kScreenWidth, kScreenHeight - 64 - self.tabBarController.tabBar.frame.size.height);
     view.label.text = [NSString stringWithFormat:@"address is %p \r page index is %ld", view, (long)index];
     [self.scrollView addSubview:view];
-    NSLog(@"Counf of array %ld",self.reusableArray.count);
+    NSLog(@"View %ld is added",view.index);
 }
 
 - (void)reuseViewWithIndex:(NSInteger)index {
     for (ReusableView *view in self.reusableArray) {
-        if (view.index < index - 2 || view.index > index + 1) {
+        if (view.index == -1) {
+            continue;
+        }
+        if (view.index < index - 2 || view.index > index + 2) {
             NSLog(@"view %ld is removed and will be reused",(long)view.index);
-            view.index = - 1;
+            view.index = -1 ;
             [view removeFromSuperview];
         }
     }
@@ -81,6 +84,7 @@
 - (ReusableView *)dequeueReusableViewWithindex:(NSUInteger)index {
     for (ReusableView *view in self.reusableArray) {
         if (view.index == index) {
+            NSLog(@"Existing view %ld is reused",view.index);
             return view;
         }
         
@@ -104,6 +108,7 @@
     self.lastIndex = index;
     [self prepareViewsForBothEndsAtIndex:index];
     [self setupViewAtIndex:index];
+    NSLog(@"Counf of array %ld",self.reusableArray.count);
 }
 
 @end
