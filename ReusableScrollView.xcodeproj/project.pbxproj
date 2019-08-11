@@ -14,8 +14,8 @@
 		DDB9807722FFCEED0000E2BA /* ReusableScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB9807622FFCEED0000E2BA /* ReusableScrollViewTests.m */; };
 		DDB9808222FFCEED0000E2BA /* ReusableScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB9808122FFCEED0000E2BA /* ReusableScrollViewUITests.m */; };
 		DDB9809422FFD02F0000E2BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB9809122FFD02F0000E2BA /* Main.storyboard */; };
-		DDB9809522FFD02F0000E2BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB9809222FFD02F0000E2BA /* ViewController.m */; };
 		DDB9809622FFD02F0000E2BA /* ReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB9809322FFD02F0000E2BA /* ReusableView.m */; };
+		DDB9809922FFD3650000E2BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB9809822FFD3650000E2BA /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +50,10 @@
 		DDB9808122FFCEED0000E2BA /* ReusableScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReusableScrollViewUITests.m; sourceTree = "<group>"; };
 		DDB9808322FFCEED0000E2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB9808F22FFD02F0000E2BA /* ReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReusableView.h; sourceTree = "<group>"; };
-		DDB9809022FFD02F0000E2BA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ReusableView/ReusableView/ViewController.h; sourceTree = "<group>"; };
 		DDB9809122FFD02F0000E2BA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		DDB9809222FFD02F0000E2BA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ReusableView/ReusableView/ViewController.m; sourceTree = "<group>"; };
 		DDB9809322FFD02F0000E2BA /* ReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReusableView.m; sourceTree = "<group>"; };
+		DDB9809722FFD3650000E2BA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DDB9809822FFD3650000E2BA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,8 @@
 				DDB9809122FFD02F0000E2BA /* Main.storyboard */,
 				DDB9808F22FFD02F0000E2BA /* ReusableView.h */,
 				DDB9809322FFD02F0000E2BA /* ReusableView.m */,
-				DDB9809022FFD02F0000E2BA /* ViewController.h */,
-				DDB9809222FFD02F0000E2BA /* ViewController.m */,
+				DDB9809722FFD3650000E2BA /* ViewController.h */,
+				DDB9809822FFD3650000E2BA /* ViewController.m */,
 				DDB9805D22FFCEEB0000E2BA /* AppDelegate.h */,
 				DDB9805E22FFCEEB0000E2BA /* AppDelegate.m */,
 				DDB9806622FFCEED0000E2BA /* Assets.xcassets */,
@@ -268,9 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDB9806D22FFCEED0000E2BA /* main.m in Sources */,
-				DDB9809522FFD02F0000E2BA /* ViewController.m in Sources */,
 				DDB9805F22FFCEEB0000E2BA /* AppDelegate.m in Sources */,
 				DDB9809622FFD02F0000E2BA /* ReusableView.m in Sources */,
+				DDB9809922FFD3650000E2BA /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
